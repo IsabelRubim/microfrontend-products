@@ -11,7 +11,7 @@ This micro-frontend exposes product catalog components via Module Federation.
 
 ## Prerequisites
 
-- Node.js >= 16
+- Node.js >= 20
 - pnpm or npm
 
 ## Installation
