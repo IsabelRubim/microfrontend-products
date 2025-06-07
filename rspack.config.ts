@@ -11,7 +11,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    publicPath,
+    publicPath: publicPath,
   },
   devServer: {
     port: 3001,
