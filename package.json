@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "rspack serve",
-    "build": "rspack build"
+    "build": "NODE_ENV=production rspack build"
   },
   "dependencies": {
     "@module-federation/enhanced": "^0.8.9",
