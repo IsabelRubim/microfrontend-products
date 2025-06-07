@@ -2,16 +2,13 @@ const { ModuleFederationPlugin } = require('@rspack/core').container;
 const { rspack } = require('@rspack/core');
 const path = require('path');
 
-const isProduction = process.env.NODE_ENV === 'production';
-const publicPath = isProduction ? '/' : 'http://localhost:3002/';
-
 /** @type {import('@rspack/cli').Configuration} */
 const config = {
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    publicPath: publicPath,
+    publicPath: 'http://localhost:3001/',
   },
   devServer: {
     port: 3001,
